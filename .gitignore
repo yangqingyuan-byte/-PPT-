@@ -4,9 +4,46 @@
 # 但保留 Python 文件
 !*.py
 
-# 保留目录结构（以便 Git 可以进入目录查找 .py 文件）
+# 保留 Markdown 文档文件
+!*.md
+
+# 保留配置文件
+!*.json
+
+# 保留目录结构（以便 Git 可以进入目录查找文件）
 !*/
 
 # 保留 .gitignore 文件本身
 !.gitignore
+
+# 保留 macOS 启动脚本文件
+!*.command
+!*.sh
+
+# 忽略临时文件和系统文件
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.tmp
+*.temp
+
+# 忽略 IDE 配置文件（可选，根据需要取消注释）
+# .vscode/
+# .idea/
+# *.swp
+# *.swo
+# *~
+
+# 忽略生成的输出文件（根据项目需要调整）
+# *.pptx
+# *.pdf
 
